@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -11,22 +16,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
-
-.search-input {
+.input {
     background: #FFF;
     border: 1px solid #d9d9d9;
     border-radius: 2px;
-    height: 40px;
-    width: 690px;
     font-size: 16px;
     line-height: 24px;
-    background-image: url(../images/home.svg);
-    background-repeat: no-repeat;
-    background-position: left 11px center;
+    padding: 8px;
     padding-left: 35px;
     outline: none;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: left 11px center;
+}
+
+.input-address {
+    width: 690px;
+    background-image: url(../images/home.svg);
+}
+
+.input-search {
+    background-image: url(../images/search.png);
+    width: 300px;
+
 }
 
 .buttons {
@@ -63,4 +77,128 @@
 
 .button-text{
     vertical-align: middle;
+}
+
+.promo {
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #fff1b8 url(../images/promo-image.png) no-repeat top -100px right -260px / 924px;
+    border-radius: 10px;
+    padding: 68px 70px;
+    margin-bottom: 56px;
+}
+
+.promo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    color: #302c34;
+}
+
+.promo-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302c34;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px 23px 35px 23px;
+}
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.card-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color:#FFF;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    margin-right: 26px;
+    color: #ffc107;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.price, .category{
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.price:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8c8c8c;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
 }
