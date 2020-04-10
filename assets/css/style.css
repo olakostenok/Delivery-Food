@@ -40,7 +40,7 @@ body {
 .input-search {
     background-image: url(../images/search.png);
     width: 300px;
-
+    margin-left: auto;
 }
 
 .buttons {
@@ -111,7 +111,7 @@ body {
 .section-heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 44px;
 }
 
@@ -122,6 +122,7 @@ body {
     line-height: 42px;
     color: #000;
     margin: 0;
+    margin-right: 30px;
 }
 
 .cards {
@@ -138,6 +139,7 @@ body {
     overflow: hidden;
     margin-bottom: 30px;
     flex-basis: 31%;
+    text-decoration: none;
 }
 
 .card-image {
@@ -255,6 +257,8 @@ body {
     margin-right: 21px;
 }
 
+/* Media-запросы под разные девайсы */
+
 @media (max-width: 1366px) {
     .container {
         max-width: 960px;
@@ -313,7 +317,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .rating {
+    .card .rating {
         flex-basis: 100%;
     }
 
@@ -431,4 +435,33 @@ body {
     .footer-link:not(:last-child) {
         margin-right: 0;
     }
+}
+
+/* Стили для страниц ресторанов */
+
+.card-title-reg {
+    font-weight: 400;
+}
+
+.ingredients {
+    color: #8c8c8c;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.button-card-text {
+    margin-right: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
 }
